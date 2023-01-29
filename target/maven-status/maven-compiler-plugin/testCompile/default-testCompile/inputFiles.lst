@@ -1,0 +1,10 @@
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/pages/loginPage.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/runner/Runner.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/utils/ConfigReader.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/pages/signupPage.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/stepdefinitions/RegisterStepDefinitions.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/pages/deletedPage.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/utils/BrowserUtils.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/pages/automationMainPage.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/utils/DriverHelper.java
+/Users/jg/IdeaProjects/AutomationExercise/src/test/java/com/tests/automationExercise/stepdefinitions/Hook.java
