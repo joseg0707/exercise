@@ -1,4 +1,5 @@
-Feature: Negative login with incorrect credentials 
+@regression
+Feature: Negative login with incorrect credentials
   Scenario: Incorrect credentials
     When User Click on Signup and Login button
     And Verify 'Login to your account' is visible

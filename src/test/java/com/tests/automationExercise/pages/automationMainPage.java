@@ -28,6 +28,9 @@ public class automationMainPage {
     @FindBy(xpath = "//a[@href='/logout']")
     WebElement logoutButton;
 
+    @FindBy(xpath = "//a[@href='/contact_us']")
+    WebElement contactUsButton;
+
 
     public void SignUpButton(){
         signUpLoginButton.click();
@@ -50,5 +53,9 @@ public class automationMainPage {
 
     public void logoutButton(){
         logoutButton.click();
+    }
+
+    public void contactUs(){
+        contactUsButton.click();
     }
 }

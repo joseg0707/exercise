@@ -1,6 +1,6 @@
 @regression
 
-Feature: Testing negative and positive register/login functionality
+Feature: Testing positive register/login functionality
   Scenario: Register User
     Given User Navigate to url verify that home page is visible successfully 'https://automationexercise.com/'
     And User Click on Signup and Login button

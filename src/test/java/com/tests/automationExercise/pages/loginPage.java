@@ -41,6 +41,9 @@ public class loginPage {
     @FindBy(xpath = "//p[.='Your email or password is incorrect!']")
     WebElement loginErrorText;
 
+    @FindBy(xpath = "//p[.='Email Address already exist!']")
+    WebElement signupErrorText;
+
 
 
     public String signupText(){
@@ -67,4 +70,7 @@ public class loginPage {
         return BrowserUtils.getText(loginErrorText);
     }
 
+    public String errorSignupText(){
+        return BrowserUtils.getText(signupErrorText);
+    }
 }

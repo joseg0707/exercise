@@ -1,4 +1,4 @@
-package com.tests.automationExercise.stepdefinitions;
+package com.tests.automationExercise.stepdefinitions.negativeTestCases;
 
 import com.tests.automationExercise.pages.loginPage;
 import io.cucumber.java.en.Then;

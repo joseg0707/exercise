@@ -1,4 +1,4 @@
-package com.tests.automationExercise.stepdefinitions;
+package com.tests.automationExercise.stepdefinitions.positiveTestCases;
 
 import com.tests.automationExercise.pages.automationMainPage;
 import com.tests.automationExercise.pages.deletedPage;
