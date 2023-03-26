@@ -79,6 +79,7 @@ public class contactUsFormPage {
         Thread.sleep(3000);
         if(driver.getCurrentUrl().trim().contains("#google_vignette")){
             driver.switchTo().frame("aswift_1");
+            driver.switchTo().frame("ad_iframe");
             dismissIframe.click();
         }
     }

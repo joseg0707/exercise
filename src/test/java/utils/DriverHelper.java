@@ -3,6 +3,7 @@ package utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -23,8 +24,10 @@ public class DriverHelper {
             String browser = "chrome";
             switch (browser){
                 case "chrome":
+                    ChromeOptions opt = new ChromeOptions();
+                    opt.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
-                    driver= new ChromeDriver();
+                    driver= new ChromeDriver(opt);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();

@@ -14,7 +14,7 @@ public class Hook {
     @Before
     public void setup(){
         driver = DriverHelper.getDriver();
-        driver.get(ConfigReader.readProperty("url"));
+        driver.get(ConfigReader.readProperty("urlAE"));
     }
 
     @After
