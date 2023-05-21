@@ -42,7 +42,7 @@ public class positiveContactFormStepDef {
     @Then("User clicks Home Button and verify User is navigated to the homepage")
     public void user_clicks_home_button_and_verify_user_is_navigated_to_the_homepage() throws InterruptedException {
         contactUs.homePageButton();
-        Assert.assertEquals(ConfigReader.readProperty("url"), driver.getCurrentUrl());
+        Assert.assertEquals(ConfigReader.readProperty("urlAE"), driver.getCurrentUrl());
     }
 
 }
