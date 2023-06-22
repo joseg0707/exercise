@@ -34,6 +34,9 @@ public class automationMainPage {
     @FindBy(xpath = "//a[@href= '/test_cases']")
     WebElement testCasesButton;
 
+    @FindBy(xpath = "//a[@href='/products']")
+    WebElement products;
+
 
     public void SignUpButton(){
         signUpLoginButton.click();
@@ -67,6 +70,15 @@ public class automationMainPage {
         if(driver.getCurrentUrl().trim().contains("#google_vignette")){
             driver.navigate().refresh();
             testCasesButton.click();
+        }
+    }
+
+    public void productsButton(){
+        products.click();
+
+        if(driver.getCurrentUrl().trim().contains("#google_vignette")){
+            driver.navigate().refresh();
+            products.click();
         }
     }
 }

@@ -25,7 +25,7 @@ public class DriverHelper {
             switch (browser){
                 case "chrome":
                     ChromeOptions opt = new ChromeOptions();
-                    opt.addArguments("--remote-allow-origins=*");
+                    opt.addArguments("--remote-allow-origins=*" ,"ignore-certificate-errors");
                     WebDriverManager.chromedriver().setup();
                     driver= new ChromeDriver(opt);
                     break;

@@ -1,4 +1,4 @@
-package com.tests.automationExercise.stepdefinitions.positiveTestCases;
+package com.tests.automationExercise.stepdefinitions;
 
 import com.tests.automationExercise.pages.automationMainPage;
 import io.cucumber.java.en.Then;

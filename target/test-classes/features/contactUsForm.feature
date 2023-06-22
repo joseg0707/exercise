@@ -1,5 +1,5 @@
 @regression
-@Reregression
+
 
   Feature: Send a contact form successfully
     Scenario: User is able to submit a contact us form for any issues
