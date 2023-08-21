@@ -24,10 +24,10 @@ public class DriverHelper {
             String browser = "chrome";
             switch (browser){
                 case "chrome":
+                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jose\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
                     ChromeOptions opt = new ChromeOptions();
-                    opt.addArguments("--remote-allow-origins=*" ,"ignore-certificate-errors");
-                    WebDriverManager.chromedriver().setup();
-                    driver= new ChromeDriver(opt);
+                    opt.setBinary("C:\\Users\\Jose\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
+                    driver = new ChromeDriver(opt);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
