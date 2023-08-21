@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.BrowserUtils;
 import utils.DriverHelper;
 
+import java.util.List;
 
 
 public class productPage {
@@ -25,6 +26,21 @@ public class productPage {
     @FindBy(xpath = "//a[@href='/product_details/1']")
     WebElement blueTop;
 
+    @FindBy(xpath = "//a[@href='/product_details/5']")
+    WebElement winterTopViewProduct;
+
+    @FindBy(xpath = "//div[@class= 'overlay-content']//p")
+    List<WebElement> topSearch;
+
+    @FindBy(xpath = "//input[@name = 'search']")
+    WebElement searchBar;
+
+    @FindBy(id = "submit_search")
+    WebElement submitSearch;
+
+    @FindBy(xpath = "//h2[.='Searched Products']")
+    WebElement searchedText;
+
 
     public String description(){
         return BrowserUtils.getText(productText);
@@ -34,7 +50,7 @@ public class productPage {
 
         Thread.sleep(3000);
         Actions actions = new Actions(driver);
-        actions.scrollToElement(blueTop).perform();
+        actions.scrollToElement(winterTopViewProduct).perform();
 
         blueTop.click();
 
@@ -46,5 +62,19 @@ public class productPage {
             blueTop.click();
         }
     }
+
+    public void search(String itemSearch){
+        this.searchBar.sendKeys(itemSearch);
+        this.submitSearch.click();
+    }
+
+    public String searchedTextField(){
+        return BrowserUtils.getText(searchedText);
+    }
+
+    public String itemName(){
+        return BrowserUtils.getText((WebElement) topSearch);
+    }
+
 
 }
